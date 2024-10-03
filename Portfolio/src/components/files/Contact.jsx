@@ -12,6 +12,8 @@ export default function Contact() {
             <p>Message:</p>
             <input></input>
 
+            <button>Submit</button>
+
 
         </div>
 

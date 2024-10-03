@@ -1,19 +1,27 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
-import Home from './files/Home';
+import AboutMe from './files/AboutMe';
 import Contact from './files/Contact';
 import Portfolio from './files/Portfolio';
+import Resume from './files/Resume'
+
+
+
+
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('AboutMe');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />;
+        if (currentPage === 'AboutMe') {
+            return <AboutMe />;
         }
         if (currentPage === 'Portfolio') {
             return <Portfolio />;
         }
+        if (currentPage === 'Resume') {
+            return <Resume />;
+        }   
         return <Contact />;
     };
 
@@ -21,14 +29,16 @@ export default function PortfolioContainer() {
 
     return (
         <>
-        <header className="header">
+        <header>
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
             
         </header>
 
         <main className="mx-3">{renderPage()}</main>
 
-        <footer className="footer"></footer>
+        <footer >
+            Footer things
+        </footer>
         </>
     );
 }
