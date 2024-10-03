@@ -1,15 +1,34 @@
 
-export default function Nav({ links }) {
+function Navbar({currentPage, handlePageChange}) {
     return (
-        <nav className="navbar navbar-expand-lg bg-secondary">
-            <div className="container-fluid">
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-1g-0">
-                        {links.map((link) => link)}
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <ul className="nav nav-tabs">
+            <li className="nav-item">
+                <a
+                    href="#home"
+                    onClick={() => handlePageChange('Home')}
+                    className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>
+                        Home
+                    </a>
+            </li>
+            <li className="nav-item">
+                <a
+                    href="Portfolio"
+                    onClick={() => handlePageChange('Portfolio')}
+                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
+
+                    </a>
+            </li>
+            <li className="nav-item">
+                <a 
+                    href="#contact"
+                    onClick={() => handlePageChange('Contact')}
+                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
+                        Contact
+                    </a>
+            </li>
+
+        </ul>
     );
 }
 
+export default Navbar;
