@@ -1,3 +1,4 @@
+import '../styles/AboutMe.css'
 export default function Contact() {
     return(
         <div>

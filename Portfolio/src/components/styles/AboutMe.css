@@ -1,29 +1,71 @@
+:root {
+    color: white;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 header {
-    background-color: gray;
-    padding: 50px;
+    background-size: cover;
+    background-color:antiquewhite;
+    padding: 10px;
+   
+    display: flex;
+    
+    margin: 0;
+    
+    
+}
+
+main h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
     
 }
 main {
     flex-grow: 1;
-    background-color: rgb(54, 54, 134);
+    background-color: rgb(35, 70, 81);
+    padding:200px;
+    display: flex;
+    
+    
+   
+ 
+    
 }
 p {
+    font-stretch: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: white;
+    height: 300px;
+    padding: auto;
+   
 }
 
 img {
     border-radius: 50%;
-    margin-left: 0;
+    margin-left: auto;
 }
 footer {
+    background-color: antiquewhite;
     border-top: solid black;
-    text-align: center;
-    margin-top: auto;
+    justify-content: center;
+    
+    display: flex;
+   
+    padding:10px;
+    margin: 0;
+}
+
+.tab {
+    display: flex;
+    margin: 45px;
+    font-size: 25px;
+    list-style-type: none;
+    
 }

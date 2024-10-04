@@ -3,8 +3,9 @@ import Navbar from './Navbar';
 import AboutMe from './files/AboutMe';
 import Contact from './files/Contact';
 import Portfolio from './files/Portfolio';
-import Resume from './files/Resume'
-import './styles/AboutMe.css'
+import Resume from './files/Resume';
+import './styles/AboutMe.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -40,7 +41,10 @@ export default function PortfolioContainer() {
         <footer >
            <a href="https://github.com/dhurteau26">
                 <img src="./src/assets/github.png" width="50px"></img>
-           </a>
+            </a>
+            <a href="/">
+                <img src="./src/assets/social.png" width="60px"></img>
+            </a>
         </footer>
         </>
     );
