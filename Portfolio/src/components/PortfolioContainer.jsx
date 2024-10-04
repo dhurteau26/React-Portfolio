@@ -4,6 +4,7 @@ import AboutMe from './files/AboutMe';
 import Contact from './files/Contact';
 import Portfolio from './files/Portfolio';
 import Resume from './files/Resume'
+import './styles/AboutMe.css'
 
 
 
@@ -34,10 +35,12 @@ export default function PortfolioContainer() {
             
         </header>
 
-        <main className="mx-3">{renderPage()}</main>
+        <main >{renderPage()}</main>
 
         <footer >
-            Footer things
+           <a href="https://github.com/dhurteau26">
+                <img src="./src/assets/github.png" width="50px"></img>
+           </a>
         </footer>
         </>
     );

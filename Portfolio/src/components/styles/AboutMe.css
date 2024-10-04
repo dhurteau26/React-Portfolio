@@ -1,4 +1,29 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: gray;
+    padding: 50px;
+    
+}
+main {
+    flex-grow: 1;
+    background-color: rgb(54, 54, 134);
+}
+p {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
 img {
     border-radius: 50%;
     margin-left: 0;
+}
+footer {
+    border-top: solid black;
+    text-align: center;
+    margin-top: auto;
 }
