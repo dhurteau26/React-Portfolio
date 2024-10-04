@@ -6,29 +6,28 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    flex-grow: 1;
 }
+
 header {
-    background-size: cover;
-    background-color:antiquewhite;
-    padding: 10px;
-   
-    display: flex;
-    
-    margin: 0;
-    
+    padding: 15px;
+    background-image: url("./src/assets/header.jpg");
     
 }
 
-main h1{
+    
+
+h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     text-align: center;
     
 }
 main {
-    flex-grow: 1;
     background-color: rgb(35, 70, 81);
-    padding:200px;
+    height: 100%;
+    width: 100%;
     display: flex;
     
     
@@ -37,7 +36,7 @@ main {
     
 }
 p {
-    font-stretch: absolute;
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -50,22 +49,4 @@ p {
 img {
     border-radius: 50%;
     margin-left: auto;
-}
-footer {
-    background-color: antiquewhite;
-    border-top: solid black;
-    justify-content: center;
-    
-    display: flex;
-   
-    padding:10px;
-    margin: 0;
-}
-
-.tab {
-    display: flex;
-    margin: 45px;
-    font-size: 25px;
-    list-style-type: none;
-    
 }

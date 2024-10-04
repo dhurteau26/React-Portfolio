@@ -1,8 +1,8 @@
-
+import './styles/nav.css';
 function Navbar({currentPage, handlePageChange}) {
     return (
-        <ul className="nav nav-tabs">
-            <li className="nav-item">
+        <ul className="container">
+            <li className='tab1'>
                 <a
                     href="#AboutMe"
                     onClick={() => handlePageChange('AboutMe')}
@@ -10,7 +10,7 @@ function Navbar({currentPage, handlePageChange}) {
                         About Me
                     </a>
             </li>
-            <li className="nav-item">
+            <li>
                 <a
                     href="#portfolio"
                     onClick={() => handlePageChange('Portfolio')}
@@ -18,7 +18,7 @@ function Navbar({currentPage, handlePageChange}) {
                         Portfolio
                     </a>
             </li>
-            <li className="nav-item">
+            <li>
                 <a 
                     href="#resume"
                     onClick={() => handlePageChange('Resume')}
@@ -26,7 +26,7 @@ function Navbar({currentPage, handlePageChange}) {
                         Resume    
                     </a> 
             </li>
-            <li className="nav-item">
+            <li>
                 <a 
                     href="#contact"
                     onClick={() => handlePageChange('Contact')}

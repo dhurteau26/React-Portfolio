@@ -5,7 +5,9 @@ import Contact from './files/Contact';
 import Portfolio from './files/Portfolio';
 import Resume from './files/Resume';
 import './styles/AboutMe.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './styles/nav.css';
+import './styles/footer.css'
 
 
 
@@ -38,7 +40,7 @@ export default function PortfolioContainer() {
 
         <main >{renderPage()}</main>
 
-        <footer >
+        <footer className="foot">
            <a href="https://github.com/dhurteau26">
                 <img src="./src/assets/github.png" width="50px"></img>
             </a>
