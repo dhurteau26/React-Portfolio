@@ -1,7 +1,9 @@
 import './styles/nav.css';
 function Navbar({currentPage, handlePageChange}) {
     return (
+        
         <ul className="container">
+            <h3>Derek Hurteau</h3>
             <li className='tab1'>
                 <a
                     href="#AboutMe"

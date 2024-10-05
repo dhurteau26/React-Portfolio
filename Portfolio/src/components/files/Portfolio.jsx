@@ -1,5 +1,5 @@
 
-import '../styles/AboutMe.css'
+
 
 export default function Portfolio() {
     return (
