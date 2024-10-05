@@ -1,11 +1,14 @@
-
-import '../styles/Contact.css'
 import Swal from 'sweetalert2'
+import '../styles/Contact.css'
+
+
+
 
 const Contact = () => {
-
     const onSubmit = async (event) => {
+        
         event.preventDefault();
+        
         const formData = new FormData(event.target);
     
         formData.append("access_key", "0cc18ed4-3196-4cb4-bce6-1e7a05fb155e");
@@ -29,7 +32,13 @@ const Contact = () => {
             icon: "success"
           });
         }
+        
       };
+ 
+
+
+
+    
 
     return (
         <section className='contact'>
@@ -37,15 +46,15 @@ const Contact = () => {
                 <h2>Contact Form</h2>
                 <div className='input-box'>
                     <label>Full Name</label>
-                    <input type="text" className="field" placeholder="Enter your name" name='name' required />
+                    <input  type="text" className="field" placeholder="Enter your name" name='name'  required />
                 </div>
                 <div className='input-box'>
-                    <label>Email Adress </label>
-                    <input type="email" className="field" placeholder="Enter your email" name='email' required />
+                    <label>Email Address </label>
+                    <input  type="email" className="field" placeholder="Enter your email" name='email'  required />
                 </div>
                 <div className='input-box'>
                     <label>Your Message</label>
-                    <textarea name="message"  className="field mess" placeholder='Enter your message'></textarea>
+                    <textarea  name="message"  className="field mess"  placeholder='Enter your message' ></textarea>
                 </div>
                 <button type="submit">Submit</button>
             </form>
