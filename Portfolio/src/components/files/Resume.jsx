@@ -1,8 +1,22 @@
+import '../styles/Resume.css'
+
 export default function Resume() {
     return (
-        <div>
+        <div className="resume">
             <h1>Resume</h1>
-            <p></p>
+            <ul>
+                <h3>Front End Proficiencies</h3>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <h3>Back End Proficiencies</h3>
+                <li>APIs</li>
+                <li>Node</li>
+                <li>Express</li>
+                
+                
+            </ul>
         </div>
     )
 }

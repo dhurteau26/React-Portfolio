@@ -1,0 +1,30 @@
+.portO {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    background-color: rgb(18, 110, 141);
+    width: 100vw;
+       
+}
+.portO h1 {
+    color: white;
+    font-size: 50px;
+    margin-left: 5%;
+    font-family:Arial, Helvetica, sans-serif;
+    border-bottom: solid #333;
+}
+
+.card {
+    display: grid;
+    flex: 0 0 calc(33.3%-100px);
+    position: relative;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    transition: flex-basis 500ms linear;
+    margin: 0;
+   
+    
+    
+}

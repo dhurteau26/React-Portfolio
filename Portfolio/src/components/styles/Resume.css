@@ -1,0 +1,36 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    background-color: rgb(18, 110, 141);
+    width: 100vw;
+    
+    
+}
+
+.resume h1 {
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 5%;
+    border-bottom: solid #333;
+}
+
+.resume h3 {
+    font-size: 35px;
+    color: white;
+    
+}
+
+
+.resume li {
+    list-style: circle;
+    font-size: 25px;
+    padding: 5px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 15px;;
+    
+    
+}

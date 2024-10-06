@@ -4,6 +4,9 @@ import AboutMe from './files/AboutMe';
 import Contact from './files/Contact';
 import Portfolio from './files/Portfolio';
 import Resume from './files/Resume';
+import '../components/styles/footer.css';
+
+
 
 
 
