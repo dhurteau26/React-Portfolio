@@ -1,36 +1,44 @@
 .resume {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-    background-color: rgb(18, 110, 141);
-    width: 100vw;
-    
-    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(95, 89, 89);
+    width: 100%;
 }
-
 .resume h1 {
-    font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
-    margin-left: 5%;
-    border-bottom: solid #333;
+    text-align: center;
+    font-size: 30px;
 }
-
 .resume h3 {
-    font-size: 35px;
-    color: white;
+    font-size: 25px;
+    border-bottom: solid#333;
+    width: 18vw;
+    color: #333;
     
 }
 
 
-.resume li {
-    list-style: circle;
-    font-size: 25px;
-    padding: 5px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 15px;;
+.form1 {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0 .1);
+    color: #333;
+    margin: 25px;
     
-    
+}
+.form1 li {
+    padding: 8px;
+    font-size: 18px;
+    list-style:circle;
+}
+a:link {
+    text-decoration: none;
+}
+a {
+    font-size: 15px;
+    margin-left:35px;
 }

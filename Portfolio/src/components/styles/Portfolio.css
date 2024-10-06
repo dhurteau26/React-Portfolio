@@ -1,30 +1,53 @@
 .portO {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    
     margin: 0;
-    background-color: rgb(18, 110, 141);
+    background-color: rgb(95, 89, 89);
     width: 100vw;
+    
        
 }
 .portO h1 {
     color: white;
     font-size: 50px;
-    margin-left: 5%;
+    margin-left: 10%;
     font-family:Arial, Helvetica, sans-serif;
     border-bottom: solid #333;
+    width: 13vw;
+    text-align: left;   
+}
+.card-container{
+    display: grid;
+    row-gap: 5px;
+    column-gap: -200px;
+    
+    text-align: center;
 }
 
-.card {
-    display: grid;
-    flex: 0 0 calc(33.3%-100px);
-    position: relative;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px;
-    transition: flex-basis 500ms linear;
-    margin: 0;
-   
-    
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+
+.card2 {
+    grid-column-start: 2;
+    grid-column-end: 0;
+
+}
+
+.card-container li {
+    list-style: none;
+}
+
+.card-container li h4 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
     
 }
+
+@media screen and (max-width: 768px) {
+    .portO {
+        flex-direction: column;
+    }

@@ -1,4 +1,6 @@
 import './styles/nav.css';
+
+
 function Navbar({currentPage, handlePageChange}) {
     return (
         
@@ -9,31 +11,31 @@ function Navbar({currentPage, handlePageChange}) {
                     href="#AboutMe"
                     onClick={() => handlePageChange('AboutMe')}
                     className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>
-                        About Me
+                       <h2 id='color'>About Me</h2> 
                     </a>
             </li>
             <li>
                 <a
-                    href="#portfolio"
+                    href="#portfolio" 
                     onClick={() => handlePageChange('Portfolio')}
                     className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
-                        Portfolio
+                        <h2 id='color'>Portfolio</h2>
                     </a>
             </li>
             <li>
                 <a 
-                    href="#resume"
+                    href="#resume" 
                     onClick={() => handlePageChange('Resume')}
                     className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
-                        Resume    
+                        <h2 id='color'>Resume</h2>   
                     </a> 
             </li>
             <li>
                 <a 
-                    href="#contact"
+                    href="#contact" 
                     onClick={() => handlePageChange('Contact')}
                     className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
-                        Contact
+                        <h2 id='color'>Contact</h2>
                     </a>
             </li>
 

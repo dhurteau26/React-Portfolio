@@ -1,8 +1,11 @@
 
 .foot {
-    text-align: center;
+    display: flex;
     background-image: url(./src/assets/header.jpg);
     bottom: 0;
-    width: 100vw;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+
     
 }
