@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     
-    margin: 0;
+    margin: 5px;
     background-color: rgb(95, 89, 89);
-    width: 100vw;
+    width: 100%;
     
        
 }
@@ -14,7 +14,7 @@
     margin-left: 10%;
     font-family:Arial, Helvetica, sans-serif;
     border-bottom: solid #333;
-    width: 13vw;
+
     text-align: left;   
 }
 .card-container{
@@ -25,16 +25,7 @@
     text-align: center;
 }
 
-.card1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-   }
 
-.card2 {
-    grid-column-start: 2;
-    grid-column-end: 0;
-
-}
 
 .card-container li {
     list-style: none;
@@ -46,8 +37,44 @@
     text-align: center;
     
 }
+@media screen and (min-width: 1440px){
+     .card1 {
+        
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+
+.card2 {
+    grid-column-start: 2;
+}
+    .portO h1 {
+        width: 8vw;
+    }
+@media screen and (max-width: 1440px) {
+    .portO h1 {
+        font-size: 35px;
+        
+    }
+}
+}
 
 @media screen and (max-width: 768px) {
     .portO {
-        flex-direction: column;
+            display: flex;
+            flex-direction: column;  
+            width: 100%;
+        }
+    .portO {
+        float: left;
+        
     }
+    .card, .card1, .card2 {
+        width: 100%;
+        margin-left: -14%;
+    }
+    
+    .portO h1 {
+        width: 41vw;
+    }
+    
+}
