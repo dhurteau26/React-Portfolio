@@ -45,13 +45,13 @@ export default function PortfolioContainer() {
 
         <footer className="foot">
            <a href="https://github.com/dhurteau26">
-                <img src="./src/assets/github.png" width="55px"></img>
+                <img src="/src/assets/github.png" width="55px"></img>
             </a>
             <a href="/">
-                <img src="./src/assets/social.png" width="65px"></img>
+                <img src="/src/assets/social.png" width="65px"></img>
             </a>
             <a href="https://x.com/dhurteau26">
-                <img src="./src/assets/twitter.png" width="52px"></img>
+                <img src="/src/assets/twitter.png" width="52px"></img>
             </a>
         </footer>
         </>
